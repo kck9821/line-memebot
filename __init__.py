@@ -12,23 +12,74 @@
 #  License for the specific language governing permissions and limitations
 #  under the License.
 
-"""linebot package."""
+"""linebot.models package."""
 
-from __future__ import unicode_literals
-
-from .__about__ import (  # noqa
-    __version__
+from .base import (  # noqa
+    Base,
 )
-from .api import (  # noqa
-    LineBotApi,
+from .error import (  # noqa
+    Error,
+    ErrorDetail,
 )
-from .http_client import (  # noqa
-    HttpClient,
-    RequestsHttpClient,
-    HttpResponse,
+from .events import (  # noqa
+    Event,
+    MessageEvent,
+    FollowEvent,
+    UnfollowEvent,
+    JoinEvent,
+    LeaveEvent,
+    PostbackEvent,
+    BeaconEvent,
+    Postback,
+    Beacon,
 )
-from .webhook import (  # noqa
-    SignatureValidator,
-    WebhookParser,
-    WebhookHandler,
+from .imagemap import (  # noqa
+    ImagemapSendMessage,
+    BaseSize,
+    ImagemapAction,
+    URIImagemapAction,
+    MessageImagemapAction,
+    ImagemapArea,
+)
+from .messages import (  # noqa
+    Message,
+    TextMessage,
+    ImageMessage,
+    VideoMessage,
+    AudioMessage,
+    LocationMessage,
+    StickerMessage,
+)
+from .responses import (  # noqa
+    Profile,
+)
+from .send_messages import (  # noqa
+    SendMessage,
+    TextSendMessage,
+    ImageSendMessage,
+    VideoSendMessage,
+    AudioSendMessage,
+    LocationSendMessage,
+    StickerSendMessage,
+)
+from .sources import (  # noqa
+    Source,
+    SourceUser,
+    SourceGroup,
+    SourceRoom,
+)
+from .template import (  # noqa
+    TemplateSendMessage,
+    Template,
+    ButtonsTemplate,
+    ConfirmTemplate,
+    CarouselTemplate,
+    CarouselColumn,
+    TemplateAction,
+    PostbackTemplateAction,
+    MessageTemplateAction,
+    URITemplateAction,
+    DatetimePickerTemplateAction,
+    ImageCarouselTemplate,
+    ImageCarouselColumn,
 )
