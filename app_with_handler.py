@@ -17,7 +17,7 @@ import sys
 from argparse import ArgumentParser
 
 from flask import Flask, request, abort
-import SDK import linebot as linebot
+from SDK import linebot as linebot
 from linebot import (
     LineBotApi, WebhookHandler
 )
