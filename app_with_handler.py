@@ -17,14 +17,13 @@ import sys
 from argparse import ArgumentParser
 
 from flask import Flask, request, abort
-import SDK.linebot as linebot
-from SDK.linebot import (
+from linebot import (
     LineBotApi, WebhookHandler
 )
-from SDK.linebot.exceptions import (
+from linebot.exceptions import (
     InvalidSignatureError
 )
-from SDK.linebot.models import (
+from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
